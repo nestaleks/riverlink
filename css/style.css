@@ -148,12 +148,11 @@ button {
     display: flex;
     gap: 20px;
 }
-.news__item-img{
-    max-width: 270px;
-    max-height: 180px;
-}
-.news__item-img img{
-    object-fit: contain;
+
+.news__item img{
+    object-fit: cover;
+    width: 270px;
+    height: 180px;
 }
 .news__item-content {
     display: flex;
