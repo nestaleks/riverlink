@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
   <link href="./css/reset.css" rel="stylesheet">
+  <link href="./css/slick.css" rel="stylesheet">
+  <link href="./css/magnific-popup.css" rel="stylesheet">
   <link href="./css/style.css" rel="stylesheet">
   <link href="./css/media.css" rel="stylesheet">
 </head>
@@ -130,17 +132,74 @@
       <section class="services">
         <div class="container">
           <h2 class="services__title">Послуги</h2>
+          <p class="services__text">Наша компанія пропонує сучасні відеодомофони з високоякісним зображенням і функціями дистанційного керування. Забезпечуємо встановлення, консультації щодо експлуатації та підтримку. Ми гарантуємо безпеку та комфорт вашого житла.</p>
+          <div class="services__list">
+            <div class="services__item">
+              <img class="services__item-img" src="./images/services-1.svg" alt="">
+              <p class="services__item-text">Послуга 1</p>
+            </div>
+            <div class="services__item">
+              <img class="services__item-img" src="./images/services-2.svg" alt="">
+              <p class="services__item-text">Послуга 2</p>
+            </div>
+            <div class="services__item">
+              <img class="services__item-img" src="./images/services-3.svg" alt="">
+              <p class="services__item-text">Послуга 3</p>
+            </div>
+            <div class="services__item">
+              <img class="services__item-img" src="./images/services-4.svg" alt="">
+              <p class="services__item-text">Послуга 4</p>
+            </div>
+            <div class="services__item">
+              <img class="services__item-img" src="./images/services-5.svg" alt="">
+              <p class="services__item-text">Послуга 5</p>
+            </div>
+            <div class="services__item">
+              <img class="services__item-img" src="./images/services-6.svg" alt="">
+              <p class="services__item-text">Послуга 6</p>
+            </div>
+            <div class="services__item">
+              <img class="services__item-img" src="./images/services-7.svg" alt="">
+              <p class="services__item-text">Послуга 7</p>
+            </div>
+          </div>
         </div>
       </section>
       <section class="contacts">
         <div class="container">
           <h2 class="contacts__title">Контакти</h2>
+          <form class="contacts__form" action="">
+          <input class="contacts__input" type="text" placeholder="Ваше ім'я">
+          <input class="contacts__input" type="text" placeholder="Телефон">
+          <input class="contacts__input" type="text" placeholder="E-mail">
+          <textarea class="contacts__area" placeholder="Коментар"></textarea>
+          <button class="contacts__btn" type="submit">
+            <p class="contacts__btn-text">Відправити заявку</p>
+          </button>
+        </form>
         </div>
       </section>
       <section class="documents">
         <div class="container">
           <h2 class="documents__title">Документи</h2>
-        </div>
+          <div class="documents__inner">
+            <div class="documents__items">
+              <a class="documents__item-link" href="./images/documents-1.jpg">
+                <img class="documents__item-img" src="./images/documents-1.jpg" alt="" width="256" height="352">
+              </a>
+              <a class="documents__item-link" href="./images/documents-2.jpg">
+                <img class="documents__item-img" src="./images/documents-2.jpg" alt="" width="256" height="352">
+              </a>
+              <a class="documents__item-link" href="./images/documents-3.jpg">
+                <img class="documents__item-img" src="./images/documents-3.jpg" alt="" width="256" height="352">
+              </a>
+              <a class="documents__item-link" href="./images/documents-4.jpg">
+                <img class="documents__item-img" src="./images/documents-4.jpg" alt="" width="256" height="352">
+              </a>
+              <a class="documents__item-link" href="./images/documents-5.jpg">
+                <img class="documents__item-img" src="./images/documents-5.jpg" alt="" width="256" height="352">
+              </a>
+            </div>
       </section>
       </div>
     </main>
@@ -150,5 +209,9 @@
       </div>
     </footer>
   </div>
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/jquery.magnific-popup.min.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>
