@@ -65,7 +65,8 @@ button {
     display: flex;
     justify-content: space-between;
 }
-.header__logo img{
+.header__logo img,
+.footer__logo img{
     width: 100px;
 }
 .menu {
@@ -351,15 +352,15 @@ button {
 }
 .documents__items{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     gap: 20px;
 }
-.documents__item-link{
-    max-width: 300px;
-    max-height: 400px;
+.documents__item{
+    width: 100%;
 }
 .documents__item-img{
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 .slick-btn{
@@ -372,4 +373,49 @@ button {
 }
 .slick-prev{
     right: 60px;
+}
+.footer{
+    padding: 25px 0;
+}
+.footer__inner{
+    display: flex;
+    justify-content: center;
+    gap: 0 50px;
+    margin-bottom: 15px;
+}
+.footer__phone-img{
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+.footer__phone-box{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+.footer__phone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.footer__text{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+}
+#upBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
 }

@@ -34,19 +34,19 @@
                 </button>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">Новини</a>
+                <a class="menu__link" href="#news">Новини</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">Проекти</a>
+                <a class="menu__link" href="#projects">Проекти</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">Послуги</a>
+                <a class="menu__link" href="#services">Послуги</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">Контакти</a>
+                <a class="menu__link" href="#contacts">Написати нам</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">Документи</a>
+                <a class="menu__link" href="#documents">Документи</a>
               </li>
             </ul>
           </nav>
@@ -64,7 +64,9 @@
     </header>
     <main class="main">
       <div class="container">
-        <section class="news">
+        <button onclick="topFunction()" id="upBtn" title="Повернутися нагору">
+        <img src="./images/upbtn.svg" alt=""></button>
+        <section class="news" id="news">
           <div class="container">
             <h2 class="news__title">Новини</h2>
             <ul class="news__list">
@@ -100,7 +102,7 @@
             </ul>
           </div>
         </section>
-        <section class="project">
+        <section class="project" id="projects">
           <div class="container">
               <h2 class="project__title">Проекти</h2>
               <p class="project__text">Надійні рішення для будинків, офісів та багатоквартирних комплексів. Забезпечте безпеку й комфорт з професійними рішеннями від наших експертів</p>
@@ -129,7 +131,7 @@
               </ul>
           </div>
       </section>
-      <section class="services">
+      <section class="services" id="services">
         <div class="container">
           <h2 class="services__title">Послуги</h2>
           <p class="services__text">Наша компанія пропонує сучасні відеодомофони з високоякісним зображенням і функціями дистанційного керування. Забезпечуємо встановлення, консультації щодо експлуатації та підтримку. Ми гарантуємо безпеку та комфорт вашого житла.</p>
@@ -165,7 +167,7 @@
           </div>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="container">
           <h2 class="contacts__title">Написати нам</h2>
           <form class="contacts__form" action="">
@@ -179,33 +181,55 @@
         </form>
         </div>
       </section>
-      <section class="documents">
+      <section class="documents" id="documents">
         <div class="container">
           <h2 class="documents__title">Документи</h2>
           <div class="documents__inner">
             <div class="documents__items">
-              <a class="documents__item-link" href="./images/documents-1.jpg">
-                <img class="documents__item-img" src="./images/documents-1.jpg" alt="">
-              </a>
-              <a class="documents__item-link" href="./images/documents-2.jpg">
-                <img class="documents__item-img" src="./images/documents-2.jpg" alt="">
-              </a>
-              <a class="documents__item-link" href="./images/documents-3.jpg">
-                <img class="documents__item-img" src="./images/documents-3.jpg" alt="">
-              </a>
-              <a class="documents__item-link" href="./images/documents-4.jpg">
-                <img class="documents__item-img" src="./images/documents-4.jpg" alt="">
-              </a>
-              <a class="documents__item-link" href="./images/documents-5.jpg">
-                <img class="documents__item-img" src="./images/documents-5.jpg" alt="">
-              </a>
+              <div class="documents__item">
+                <a class="documents__item-link" href="./images/documents-1.jpg">
+                  <img class="documents__item-img" src="./images/documents-1.jpg" alt="">
+                </a>
+              </div>
+              <div class="documents__item">
+                <a class="documents__item-link" href="./images/documents-2.jpg">
+                  <img class="documents__item-img" src="./images/documents-2.jpg" alt="">
+                </a>
+              </div>
+              <div class="documents__item">
+                <a class="documents__item-link" href="./images/documents-3.jpg">
+                  <img class="documents__item-img" src="./images/documents-3.jpg" alt="">
+                </a>
+              </div>
+              <div class="documents__item">
+                <a class="documents__item-link" href="./images/documents-4.jpg">
+                  <img class="documents__item-img" src="./images/documents-4.jpg" alt="">
+                </a>
+              </div>
+              <div class="documents__item">
+                <a class="documents__item-link" href="./images/documents-5.jpg">
+                  <img class="documents__item-img" src="./images/documents-5.jpg" alt="">
+                </a>
+              </div>
             </div>
       </section>
       </div>
     </main>
     <footer class="footer">
       <div class="container">
-        footer
+        <div class="footer__inner">
+          <a class="footer__logo" href="#">
+            <img src="./images/logo.png" alt="logo">
+          </a>
+          <div class="footer__phone-box">
+            <img class="footer__phone-img" src="./images/phone.svg" alt="">
+            <div class="footer__phone">
+              <a class="phonenumber" href="tel:+380933550033">+38 093 355 00 33</a>
+              <a class="phonenumber" href="tel:+380933550033">+38 096 355 00 33</a>
+            </div>
+          </div>
+        </div>
+        <p class="footer__text">ТОВ Ріверлінк 2024 р.</p>
       </div>
     </footer>
   </div>
