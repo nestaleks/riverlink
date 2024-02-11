@@ -177,6 +177,13 @@ button {
     padding: 10px 40px 10px 22px; 
     max-width: 145px;
 }
+.news__item-link:hover{
+    background: #1a83b1;
+}
+.news__item-link:active{
+    color: #FFFFFF;
+    background: #7EB693;
+}
 .news__item-link::after{
     content: '';
     background-image: url(../images/arrow.svg);
