@@ -351,9 +351,13 @@ button {
 }
 .documents__items{
     display: flex;
-    justify-content: center;
-    gap: 35px;
-    margin: 0 auto;
+    justify-content: space-evenly;
+}
+.documents__item-link{
+    max-width: 300px;
+}
+.documents__item-img{
+    max-width: 100%;
 }
 .slick-btn{
     background-color: transparent;
