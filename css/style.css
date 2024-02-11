@@ -26,7 +26,7 @@ a {
     color: inherit; 
 }
 ul {
-    list-style: none; 
+    list-style: none;
 }
 button {
     background-color: transparent;
@@ -352,12 +352,15 @@ button {
 .documents__items{
     display: flex;
     justify-content: space-evenly;
+    gap: 20px;
 }
 .documents__item-link{
     max-width: 300px;
+    max-height: 400px;
 }
 .documents__item-img{
     max-width: 100%;
+    object-fit: cover;
 }
 .slick-btn{
     background-color: transparent;
