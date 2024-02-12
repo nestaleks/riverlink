@@ -66,10 +66,10 @@ button {
     margin: 0 auto;
 }
 .header {
-    background-image: url(../images/header-bg.jpg);
+    background-image: url(../images/content-img.png);
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top center;
+    background-size: 35%;
+    background-position-y: 93%;
     min-height: 100vh;
 }
 .header__inner {
@@ -139,15 +139,45 @@ button {
     width: 25px;
     height: 25px;
 }
+.header__content-box{
+    display: flex;
+    justify-content: space-between;
+    gap: 0 50px;
+    margin-top: 40px;
+}
 .header__content{
-    margin-top: 120px;
+    margin-top: 105px;
 }
 .header__content-title{
-    font-size: 60px;
+    font-size: 120px;
     margin-bottom: 30px;
+    color: #28b8e8;
+}
+.header__content-title span{
+    color: #70b634;
 }
 .header__content-text{
     font-size: 24px;
+    margin-bottom: 70px;
+}
+.header__content-btn{
+    padding: 20px 40px;
+    border-radius: 16px;
+    color: #FFFFFF;
+    background: #28b8e8;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+}
+.header__content-btn:hover{
+    background: #166ef3;
+}
+.header__content-btn:active{
+    color: #FFFFFF;
+    background: #70b634;
+}
+.header__content-img{
+    max-width: 750px;
 }
 .news {
     padding: 100px 0;
@@ -285,13 +315,53 @@ button {
 }
 .services__list{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    gap: 25px;
 }
 .services__item{
-    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    padding: 25px;
+    border-radius: 25px;
+    background-color: #f0ece5;
 }
 .services__item-img{
-    margin-bottom: 25px;
+    max-height: 250px;
+    display: flex;
+    margin: 0 auto;
+}
+.services__item-name{
+    margin-top: 25px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+.services__price{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.services__btn{
+    margin: auto auto 10px;
+    width: 200px;
+    text-align: center;
+    padding: 10px 30px;
+    border-radius: 16px;
+    color: #FFFFFF;
+    background: #28b8e8;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+}
+.header__content-btn:hover{
+    background: #166ef3;
+}
+.header__content-btn:active{
+    color: #FFFFFF;
+    background: #70b634;
 }
 .contacts{
     padding: 100px 0;
@@ -349,7 +419,6 @@ button {
     margin-top: auto;
 }
 .contacts__btn-text{
-    /* font-family: 'Roboto', sans-serif; */
     font-size: 16px;
     font-weight: 700;
 }
