@@ -262,7 +262,6 @@ button {
     gap: 25px;
 }
 .project__item {
-    background-color: #F9F8F8;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
