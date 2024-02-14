@@ -420,6 +420,7 @@ button {
     flex-wrap: wrap;
     max-width: 830px;
     margin: 0 auto;
+    gap: 0 15px;
 }
 .contacts__input{
     width: 265px;
@@ -676,8 +677,18 @@ button {
     .header__content-text {
         margin-bottom: 55px;
     }
+    .project__item-img {
+        margin: 0 auto;
+        max-width: 200px;
+    }
+    .contacts__input{
+        width: 230px;
+    }
 }
 @media(max-width: 768px) {
+    .section-padding{
+        padding: 60px 0;
+    }
     .header{
         min-height: 480px;
         background-size: 40%;
@@ -710,8 +721,33 @@ button {
     .news__item:nth-child(even){
         margin-left: auto;
     }
+    .project__list{
+        flex-direction: column;
+    }
+    .project__item-img {
+        margin: 0 auto;
+        max-width: 300px;
+        object-fit: contain;
+    }
+    .project__item-title {
+        max-width: 100%;
+        text-align: center;
+    }
+    .project__item-info{
+        margin: 0 auto;
+    }
+    .contacts__form{
+        justify-content: center;
+        max-width: 570px;
+    }
+    .contacts__input {
+        width: 180px;
+    }
 }
 @media(max-width: 560px) {
+    .h2-title{
+        font-size: 30px;
+    }
     .header{
         min-height: 0;
         background-image: none;
@@ -733,9 +769,6 @@ button {
     }
     .menu__list{
         width: 400px;
-    }
-    .section-padding{
-        padding: 60px 0;
     }
 }
 @media(max-width: 480px) {
@@ -789,12 +822,6 @@ button {
         margin-top: 20px;
         font-size: 10px;
     }
-    /* .news__item:nth-child(odd){
-        margin-right: 0;
-    }
-    .news__item:nth-child(even){
-        margin-left: 0;
-    } */
     .news__item{
         flex-basis: 300px;
         margin: 0 auto;
@@ -814,10 +841,22 @@ button {
     .news__item-link{
         font-size: 10px;
     }
+    .contacts__input{
+        width: 100%;
+    }
 }
 @media(max-width: 360px) {
     .header__content-title {
         font-size: 50px;
     }
-    
+    .project__item-img {
+        max-width: 270px;
+    }
+    .project__text {
+        font-size: 16px;
+        line-height: 130%;
+    }
+    .contacts__area {
+        margin-bottom: 30px;
+    }
 }
