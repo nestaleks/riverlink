@@ -353,13 +353,13 @@ button {
 }
 .services__list{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 25px;
 }
 .services__item{
     display: flex;
     flex-direction: column;
-    width: 450px;
+    max-width: 450px;
     padding: 25px;
     border-radius: 25px;
     background-color: #f0ece5;
@@ -570,6 +570,13 @@ button {
     .footer__phone{
         font-size: 18px;
     }
+    .services__item {
+        max-width: 400px;
+        padding: 20px;
+    }
+    .services__item-img {
+        max-height: 180px;
+    }
 }
 @media(max-width: 1280px) {
     .menu__list {
@@ -644,6 +651,15 @@ button {
     .header__content-title {
         font-size: 80px;
     }
+    .services__item-img {
+        max-height: 130px;
+    }
+    .services__item-name {
+        font-size: 25px;
+    }
+    .services__price {
+        font-size: 18px;
+    }
 }
 @media(max-width: 1024px) {
     .news__item{
@@ -660,6 +676,9 @@ button {
     .news__item-img{
         max-width: 170px;
         max-height: 115px;
+    }
+    .services__price {
+        font-size: 15px;
     }
 }
 
@@ -683,6 +702,31 @@ button {
     }
     .contacts__input{
         width: 230px;
+    }
+    .services__item {
+        padding: 10px;
+    }
+    .services__item-img {
+        max-height: 100px;
+    }
+    .services__item-name {
+        font-size: 20px;
+    }
+    .services__price {
+        flex-direction: column;
+        margin: 0 auto 25px;
+    }
+    .services__price dt{
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .services__price dd{
+        text-align: center;
+    }
+    .services__btn {
+        width: 180px;
+        padding: 10px 20px;
     }
 }
 @media(max-width: 768px) {
@@ -742,6 +786,17 @@ button {
     }
     .contacts__input {
         width: 180px;
+    }
+    .services__list {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+    .services__item {
+        width: 500px;
+    }
+    .services__item-img {
+        max-height: 245px;
     }
 }
 @media(max-width: 560px) {
