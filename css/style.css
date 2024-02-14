@@ -80,6 +80,12 @@ button {
 .footer__logo img{
     width: 200px;
 }
+.header__logo-mobile{
+    display: none;
+}
+.header__logo-mobile img{
+    height: 50px;
+}
 .menu {
     display: flex;
     align-items: center;
@@ -87,18 +93,42 @@ button {
     font-size: 25px;
     font-weight: 700;
 }
-.menu__btn {
+.menu__btn{
     display: none;
+    width: 40px;
+    height: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+}
+.menu__btn span{
+    background-color: #000000;
+    height: 2px;
+    width: 100%;
 }
 .menu__list {
     display: flex;
     align-items: center;
     gap: 30px;
+    z-index: 3;
+}
+.menu--close{
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    transition: background-color .6s ease;
+}
+.menu--close.menu--open{
+    display: block;
 }
 .menu__close {
     display: none;
-}
-.menu__close-btn {
 }
 .menu__item{
 
@@ -134,14 +164,21 @@ button {
     position: relative;
     gap: 0 10px;
 }
+.phone-mobile{
+    display: none;
+}
 .phone img{
     width: 25px;
     height: 25px;
 }
+.phone-mobile img{
+    width: 35px;
+    height: 35px;
+}
 .header__content-box{
-    display: flex;
-    justify-content: space-between;
-    gap: 0 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 20px;
     margin-top: 40px;
 }
 .header__content{
@@ -167,6 +204,7 @@ button {
     cursor: pointer;
     font-size: 16px;
     font-weight: 700;
+    width: 210px;
 }
 .header__content-btn:hover{
     background: #166ef3;
@@ -177,6 +215,9 @@ button {
 }
 .header__content-img{
     max-width: 750px;
+}
+.header__content-img img{
+    max-width: 100%;
 }
 .news {
     padding: 100px 0;
@@ -358,10 +399,10 @@ button {
     font-size: 16px;
     font-weight: 700;
 }
-.header__content-btn:hover{
+.services__btn:hover{
     background: #166ef3;
 }
-.header__content-btn:active{
+.services__btn:active{
     color: #FFFFFF;
     background: #70b634;
 }
@@ -507,4 +548,213 @@ button {
     outline: none; /* Remove outline */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
+}
+
+
+
+/******* АДАПТИВ*******/
+@media(max-width: 1440px) {
+    .phone{
+        font-size: 18px;
+    }
+    .header__content-box {
+        justify-content: space-evenly;
+        margin-top: 100px;
+    }
+    .header__content-img {
+        max-width: px;
+    }
+    .menu__link{
+        font-size: 18px;
+    }
+    .header__content{
+        margin-top: 40px;
+    }
+    .footer__phone{
+        font-size: 18px;
+    }
+}
+@media(max-width: 1280px) {
+    .menu__list {
+        gap: 15px;
+    }
+    .header__content-title {
+        font-size: 100px;
+        margin-bottom: 25px;
+    }
+    .header__content-img{
+        max-width: px;
+    }
+}
+
+@media(max-width: 1120px) {
+    .menu__list{
+        transform: translateY(-100%);
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 480px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        display: block;
+        text-align: center;
+        padding: 80px 0;
+        transition: transform .6s ease;
+        gap: 40px 0;
+    }
+    .menu__list.menu__list--open{
+        transform: translateY(0);
+    }
+    .menu__close-btn{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .menu__item{
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    .menu__link{
+        font-size: 25px;
+    }
+    .menu__btn{
+        display: flex;
+    }
+    .menu__close{
+        display: block;
+    }
+    .menu{
+        order: -1;
+        margin-right: 0;
+    }
+    .header__content-box {
+        margin-top: 40px;
+    }
+    .header__content-img {
+        max-width: px;
+    }
+    .header__content-title {
+        font-size: 80px;
+    }
+}
+@media(max-width: 940px) {
+    .header {
+        background-size: 25%;
+    }
+    .header__content {
+        margin-top: 0px;
+    }
+    .header__content-title {
+        font-size: 60px;
+        margin-bottom: 18px;
+    }
+    .header__content-img {
+        max-width: px;
+    }
+    .header__content-text {
+        margin-bottom: 55px;
+    }
+}
+@media(max-width: 768px) {
+    .header{
+        min-height: 480px;
+        background-size: 40%;
+    }
+    .phone {
+        font-size: 12px;
+    }
+    .header__content-box{
+        justify-content: space-around;
+    }
+    .header__content-img {
+        max-width: px;
+    }
+    .header__content-title {
+        font-size: 40px;
+    }
+    .header__content-text{
+        font-size: 18px;
+    }
+    .footer__inner {
+        gap: 0 20px;
+    }
+    .footer__phone{
+        font-size: 12px;
+    }
+}
+@media(max-width: 560px) {
+    .header{
+        min-height: 0;
+        background-image: none;
+    }
+    .header__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header__content-text {
+        font-size: 15px;
+    }
+    .phone {
+        display: none;
+    }
+    .phone-mobile{
+        display: flex;
+        align-items: center;
+    }
+}
+@media(max-width: 480px) {
+    .header__logo{
+        display: none;
+    }
+    .header__logo-mobile{
+        display: block;
+    }
+    .header__content-box{
+        display: flex;
+        margin: 40px 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .header__content-img{
+        display: none;
+    }
+    .header__content-title {
+        font-size: 65px;
+        text-align: center;
+    }
+    .header__content-text {
+        font-size: 20px;
+        text-align: center;
+    }
+    .header__content-btn{
+        margin: 0 auto;
+    }
+    .footer__inner{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__logo{
+        margin: 0 auto;
+    }
+    .footer__phone-box{
+        margin: 0 auto;
+    }
+    .footer__phone-img{
+        display: none;
+    }
+    .footer__phone{
+        flex-direction: row;
+        margin-top: 15px;
+    }
+    .footer__text{
+        margin-top: 20px;
+        font-size: 10px;
+    }
+}
+@media(max-width: 360px) {
+    .header__content-title {
+        font-size: 50px;
+    }
 }
