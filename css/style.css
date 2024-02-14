@@ -622,6 +622,10 @@ button {
     }
     .menu__link{
         font-size: 25px;
+        color: #FFFFFF;
+    }
+    .menu__link::before {
+        background-color: #ffffff;
     }
     .menu__btn{
         display: flex;
@@ -729,6 +733,9 @@ button {
     }
     .menu__list{
         width: 400px;
+    }
+    .section-padding{
+        padding: 60px 0;
     }
 }
 @media(max-width: 480px) {
