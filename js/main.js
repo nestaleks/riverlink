@@ -3,16 +3,28 @@ const menuBtn = document.querySelector('.menu__btn');
 const menuList = document.querySelector('.menu__list');
 
 const menuClose = document.querySelector('.menu__close');
-const menuShadow = document.querySelector('.menu--close');
+// const menuShadow = document.querySelector('.menu--close');
 
 menuBtn.addEventListener('click', ()=>{
-    menuList.classList.toggle('menu__list--open');
+    menuList.classList.toggle('menu--open');
     menuShadow.classList.toggle('menu--open');
 });
 menuClose.addEventListener('click', ()=>{
-    menuList.classList.remove('menu__list--open');
+    menuList.classList.remove('menu--open');
     menuShadow.classList.remove('menu--open');
 });
+
+//закриття бургера після кліку на посилання
+$('.menu__btn').on('click', function () {
+	$('.menu__list').addClass('menu--open');
+  });
+  
+  $( '.menu__link' ).on("click", function(){
+	$('.menu__list').removeClass('menu--open');
+  });
+
+
+
 //кнопка Наверх
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};

@@ -608,7 +608,7 @@ button {
         transition: transform .6s ease;
         gap: 40px 0;
     }
-    .menu__list.menu__list--open{
+    .menu__list.menu--open{
         transform: translateY(0);
     }
     .menu__close-btn{
