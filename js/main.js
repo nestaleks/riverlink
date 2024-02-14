@@ -1,17 +1,13 @@
 // мобільне меню
 const menuBtn = document.querySelector('.menu__btn');
 const menuList = document.querySelector('.menu__list');
-
 const menuClose = document.querySelector('.menu__close');
-// const menuShadow = document.querySelector('.menu--close');
 
 menuBtn.addEventListener('click', ()=>{
     menuList.classList.toggle('menu--open');
-    menuShadow.classList.toggle('menu--open');
 });
 menuClose.addEventListener('click', ()=>{
     menuList.classList.remove('menu--open');
-    menuShadow.classList.remove('menu--open');
 });
 
 //закриття бургера після кліку на посилання
@@ -26,7 +22,7 @@ $('.menu__btn').on('click', function () {
 
 
 //кнопка Наверх
-// When the user scrolls down 20px from the top of the document, show the button
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -43,7 +39,7 @@ function topFunction() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 };
 
-//документи
+//попап на документи
 $(document).ready(function() {
 	$('.popup__link').magnificPopup({
 		disableOn: 900,
