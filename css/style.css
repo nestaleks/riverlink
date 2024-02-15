@@ -218,8 +218,9 @@ button {
     max-width: 100%;
     margin-left: 1.875rem;
 }
-.header__img{
+.header__img {
     max-width: 46.875rem;
+    margin-left: auto;
 }
 .header__img img{
     max-width: 100%;
