@@ -683,6 +683,9 @@ button {
 }
 
 @media(max-width: 940px) {
+    .section-padding{
+        padding: 60px 0;
+    }
     .header {
         background-size: 25%;
     }
@@ -730,9 +733,6 @@ button {
     }
 }
 @media(max-width: 768px) {
-    .section-padding{
-        padding: 60px 0;
-    }
     .header{
         min-height: 480px;
         background-size: 40%;
